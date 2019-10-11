@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flight Information</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="sidebar.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+</head>
+<body class="grid-container">
+        <div class="trip-tabs">
+            <ul>
+                <li class="tab-item">
+                    <i class="fas fa-plane"></i>
+                    <span class="tab-cities"><strong>NYC ⟷ REK</strong></span>
+                    <br>
+                    <span class="tab-dates">Apr 7 - 21</span>
+                </li>
+                <li id="tab-current" class="tab-item">
+                    <i class="fas fa-plane"></i>
+                    <span class="tab-cities"><strong>NYC ⟷ REK</strong></span>
+                    <br>
+                    <span class="tab-dates">Aug 5 - 19</span>
+                </li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <form>
+                <div class="departure search-input">
+                    <input type="text" name="depart-city" value="New York (NYC)">
+                </div>
+                <div class="arrival search-input">
+                    <input type="text" name="arrive-city" value="Reykjavik (REK)">
+                </div>
+                <div class="flight-date">
+                    <i class="fas fa-calendar-alt"></i>
+                    <input type="date" name="depart-date" value="2020-08-05">
+                    <input type="date" name="return-date" value="2020-08-19">
+                    <p>15 days <i class="fas fa-times"></i></p>
+                    
+                </div>
+                <div class="search-button">
+                    <button>Search</button>
+                    <i class="fas fa-plus"></i>
+                </div>
+            </form>
+        </div>
+
+    <div class="options">
+        <div class="links">
+            <ul>
+                <li class="price-alert"><a href="#">Price alert</a></li>
+                <li class="fare-charts"><a href="#">Fare charts</a></li>
+                <li class="airline-fees"><a href="#" class="airline-fees">Airline fees</a></li>
+            </ul>
+            <div class="flex-dates">
+                <p>Flex Dates: <a href="#">±3 days</a>&nbsp&nbsp|&nbsp&nbsp<a href="#">Explorer</a></p>
+            <br>
+            </div>
+        </div>
+        <hr>
+        <div class="trends">
+            <h3>Price Trend</h3>
+            <img src="rate.png" alt="Price changes over 30 days" width="200px">
+            <p>
+                <span>Advice: Wait</span> 
+                <span>Confidence: 79%</span>
+            </p>
+            <p>Prices may fall within 7 days. <i class="fas fa-info"></i></p>
+            <br>
+        </div>
+        <hr>
+        <div class="stops">
+            <h3>Stops</h3>
+            <div>
+                <input type="checkbox" value="nonstop" checked>
+                    <span>nonstop</span>
+                    <span>$863</span>
+            </div>
+            <div>
+                <input type="checkbox" value="one-stop" checked>
+                    <span>1 stop</span>
+                    <span>$1000</span>
+            </div>
+            <div>
+                <input type="checkbox" value="more-stops" checked>
+                    <span>2+ stops</span>
+                    <span>$2731</span>
+            </div>
+            <br>
+            <a href="#">Show airline/stop price matrix</a>
+            <br>
+        </div>
+        <hr>
+        <div class="times">
+            <h3>Times</h3>
+            <h5>Take-off New York</h5>
+            <p>Tue 2:00p - Wed 12:00a</p>
+            <input type="range">
+            <br>
+            <h5>Take-off Reykjavik</h5>
+            <p>Tue 12:00a - Wed 12:00a</p>
+            <input type="range">
+            <br>
+            <a href="#">Show landing times</a>
+            <br>
+        </div>
+        <hr>
+        <div class="airports">
+            <h3>Airports</h3>
+            <input type="checkbox" value="same">Depart/Return, same airports
+        </div>
+    </div>
+    <main>
+        <div class="sort-results">
+            <span>
+                <span class="sort-results-left">
+                    <strong>15</strong> of <strong>64 flights </strong>
+                </span>
+                <a href="#">show all</a>
+            </span>
+            <span class="sort-results-right">
+                <select name="sort">
+                    <option value="low-to-high">Sort by price (low to high)</option>
+                    <option value="high-to-low">High to low</option>
+                    <option value="fewest-stops">Fewest stops</option>
+                </select>
+            </span>
+        </div>
+        <div class="ad">
+            <p class="ad-label">ad</p>
+            <div class="left-main">
+                <h3>Check Rates</h3>
+                <button>Select</button>
+            </div>
+            <div class="vl"></div>
+            <div class="center-main">
+                <h3>Faster Flights. More Legroom. 2 Bags Free</h3>
+                <p>Save time and money with Icelandair on your way to Reykjavik</p>
+                <a href="https://www.icelandair.us">Icelandair.us</a>
+            </div>
+            <div class="right-main">
+                <img src="logo.png" class="md-logo" alt="Icelandair logo">
+            </div>
+        </div>
+        <div class="flight-option">
+            <div class="left-flight-info">
+                <h2>$863</h2>
+                <p>KAYAK</p>
+                <button>Select</button>
+                <br>
+                <a href="#"><span>Orbitz</span><span>$902</span></a>
+                <a href="#"><span>CheapTickets.com</span><span>$902</span></a>
+                <select name="more-options">
+                    <option value="more">6 more sites</option>
+                    <option value="more">another site</option>
+                </select>
+            </div>
+            <div class="main-flight-info">
+                    <!-- Make this a grid -->
+                <div class="middle-flight-info"> 
+                    <div class="picture">
+                        <img src="sm-logo.png" class="small-logo" alt="small Icelandair logo">
+                    </div>
+                    <div class="flight-detail">
+                        <h2>Icelandair</h2>
+                        <p>
+                            <span>
+                            JFK 
+                            </span>
+                            <strong>
+                                2:10p
+                            </strong>
+                            <span class="gray-words">
+                                 → 
+                            </span>
+                             KEF  
+                            <strong>
+                                 11:40p
+                            </strong> 
+                            <span class="gray-words">
+                                5h 30m
+                            </span>
+                             nonstop
+                        </p>
+                        <p>KEF <strong>10:30a</strong><span class="gray-words"> → </span> JFK <strong>12:25p</strong> <span class="gray-words">5h 55m</span> nonstop</p>
+                    </div>
+                    <div class="flight-buttons-row">
+                        <button>Details</button>
+                        <button>Fares</button>
+                    </div>
+                </div>
+                <div class="right-flight-info">
+                    <i class="fas fa-moon"></i>
+                    <p>Economy</p>
+                </div>
+            </div>
+            <div></div>
+            <div class="bottom-flight-info">
+                <p>Icelandair operates flights 612, 613</p>
+            </div>
+        </div>
+        <div class="flight-option">
+            <div class="left-flight-info">
+                <h2>$863</h2>
+                <p>KAYAK</p>
+                <button>Select</button>
+                <br>
+                <a href="#"><span>Orbitz</span><span>$902</span></a>
+                <a href="#"><span>CheapTickets.com</span><span>$902</span></a>
+                <select name="more-options">
+                    <option value="more">6 more sites</option>
+                    <option value="more">another site</option>
+                </select>
+            </div>
+            <div class="main-flight-info">
+                <div class="middle-flight-info">
+                    <div>
+                        <img src="sm-logo.png" class="small-logo" alt="small Icelandair logo">
+                    </div>
+                    <div>
+                        <h2>Icelandair</h2>
+                        <p>EWR <strong>8:45p</strong><span class="gray-words"> → </span> KEF <strong>6:15a</strong> <span class="gray-words">5h 30m</span> nonstop</p>
+                        <p>KEF <strong>10:30a</strong><span class="gray-words"> → </span> JFK <strong>12:25p</strong> <span class="gray-words">5h 55m</span> nonstop</p>
+                        <button>Details</button>
+                        <button>Fares</button>
+                    </div>
+                </div>
+                <div class="right-flight-info">
+                    <i class="fas fa-moon"></i>
+                    <p>Economy</p>
+                </div>
+            </div>
+            <div></div>
+            <div class="bottom-flight-info">
+                <p>Icelandair operates flights 612, 613</p>
+            </div>
+        </div>
+        <div class="flight-option">
+            <div class="left-flight-info">
+                <h2>$863</h2>
+                <p>KAYAK</p>
+                <button>Select</button>
+                <br>
+                <a href="#"><span>Orbitz</span><span>$902</span></a>
+                <a href="#"><span>CheapTickets.com</span><span>$902</span></a>
+                <select name="more-options">
+                    <option value="more">6 more sites</option>
+                    <option value="more">another site</option>
+                </select>
+            </div>
+            <div class="main-flight-info">
+                <div class="middle-flight-info">
+                        <div>
+                            <img src="sm-logo.png" class="small-logo" alt="small Icelandair logo">
+                        </div>
+                        <div>
+                            <h2>Icelandair</h2>
+                            <p>JFK <strong>8:40p</strong><span class="gray-words"> → </span> KEF <strong>6:15a</strong> <span class="gray-words">5h 30m</span> nonstop</p>
+                            <p>KEF <strong>10:30a</strong><span class="gray-words"> → </span> JFK <strong>12:25p</strong> <span class="gray-words">5h 55m</span> nonstop</p>
+                            <button>Details</button>
+                            <button>Fares</button>
+                        </div>
+                    </div>
+                    <div class="right-flight-info">
+                        <i class="fas fa-moon"></i>
+                        <p>Economy</p>
+                    </div>
+            </div>
+            <div></div>
+            <div class="bottom-flight-info">
+                <p>Icelandair operates flights 612, 613</p>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/d8e0d45f1e.js" crossorigin="anonymous"></script>
+</body>
+</html>

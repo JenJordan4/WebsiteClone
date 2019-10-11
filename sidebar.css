@@ -1,0 +1,82 @@
+h3{
+    margin: 0 0 5px 0;
+}
+
+h5 {
+    margin: 0;
+}
+.options {
+    background-color: #fafafa;
+    grid-area: sidebar;
+ }
+
+ .links ul{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "price-alert fare-charts"
+        "airline-fees airline-fees"
+        "flex-dates flex-dates";
+    margin: 10px, 0, 0, 0;
+ }
+
+ .price-alert {
+     grid-area: price-alert;
+ }
+
+ .fare-charts {
+     grid-area: fare-charts;
+ }
+
+ .airline-fees {
+     grid-area: airline-fees;
+ }
+
+ .flex-dates {
+     grid-area: flex-dates;
+     display: flex;
+ }
+
+ .flex-dates > p {
+    margin: 0;
+ }
+
+ .trends, .trends > p {
+     display: flex;
+     flex-direction: column;
+     justify-content: left;
+ }
+
+ .trends > h3, p {
+    margin: 0;
+ }
+ /* Please help spread these */
+.trends > p {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .trends > p > span {
+     font-weight: bold;
+ }
+
+ .stops {
+    display: flex;
+    flex-direction: column;
+ }
+ /* Please help spread these */
+ .stops > div {
+    justify-content: space-around; 
+ }
+
+ .stops > h3 {
+    margin: 0;
+ }
+
+ .times {
+
+ }
+
+ .airports {
+
+ }

@@ -1,0 +1,116 @@
+
+ main {
+    background-color:white;
+    border: 1px solid gray;
+    grid-area: main;
+}
+
+h2 {
+    margin: 0;
+}
+
+main button {
+    margin: 0;
+}
+
+div.sort-results {
+    background-color: white;
+    border: 1px solid gray;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+}
+
+.sort-results-left {
+    margin-right: 15px;
+    word-spacing: 3px;
+}
+
+.ad {
+    display: grid;
+    background-color: #fafafa;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "label label label label"
+        "ad-left ad ad logo";
+    padding: 5px;
+    row-gap: 5px;
+    column-gap: 10px;
+}
+
+p.ad-label {
+    grid-area: label;
+    justify-self: flex-end;
+    padding-right: 20px;
+    color: gray;        
+}
+
+.left-main {
+    grid-area: ad-left;
+    padding-left: 20px;
+}
+
+.center-main{
+    grid-area: ad;
+}
+
+.right-main {
+    grid-area: logo;
+}
+
+.flight-option {
+    display: grid;
+    background-color: white;
+    grid-template-rows: 90% auto;
+    grid-template-columns: 20% 80%;
+    padding: 5px;
+    row-gap: 5px;
+}
+
+.left-flight-info {
+    border-right: 1px solid grey;
+    padding: 20px;
+}
+
+.left-flight-info a {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-flight-info {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    padding-top: 20px;
+}
+.flight-button-row {
+    align-self: baseline;
+}
+
+.main-flight-info button {
+    background-color: #fafafa;
+    color: gray;
+    width: 70px;
+    font-size: 12px;
+}
+
+.middle-flight-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.middle-flight-info div {
+    padding: 10px;
+}
+
+.right-flight-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: gray;
+}
+
+.bottom-flight-info {
+    justify-self: flex-end;
+    color: gray;
+}
